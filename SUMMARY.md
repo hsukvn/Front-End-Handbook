@@ -10,4 +10,13 @@
        * [super in constructor](react/super_in_constructor.md)
        * [Import and Export](react/export.md)
        * [Reference](react/reference.md)
+       * [Destructing](react/destructing.md)
+       * [Template Strings](react/template_strings.md)
+       * [let](react/let.md)
+       * [class](react/class.md)
+       * [arrow functions](react/arrow_functions.md)
+       * [module](react/module.md)
+       * [async](react/async.md)
+   * [one-way binding](react/one-way_binding.md)
+   * [Route](react/route.md)
 
