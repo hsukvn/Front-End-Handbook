@@ -1,6 +1,6 @@
 # one-way binding
 
-```
+```javascript
 export default class Layout extends React.Component {
   constructor() {
     super();
@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
 }
 ```
 
-```
+```javascript
 export default class Header extends React.Component {
   handleChange(e) {
     const title = e.target.value;

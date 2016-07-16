@@ -26,14 +26,34 @@ export default class Layout extends React.Component {
     }
 
     render() {
+        const { history } = this.props;
+        console.log(history.isActive("archives")); // 看當前 archives 是否 active
         return (
             <div>
                 <h1>haha</h1>
                 {this.props.children}
-                <Link to="archives">archives</Link>
+                <Link to="archives" activeClassName="test">archives</Link> // Active 時加 class label
                 <Link to="settings"><button class="btn btn-success">settings</button></Link>
                 <Link to="settings" class="btn btn-danger">settings</Link>
                 <button onClick={this.navigate.bind(this)}>featured</button>
+            </div>
+        );
+    }
+}
+```
+
+```javascript
+export default class Archives extends React.Component {
+    const { params } = this.props; /archives/hahaha
+    const { article } = params; // hahaha
+    const { query } = this.props.location; // ?date=55&filter=66
+    const { date, filter } = query;
+
+    render() {
+        return (
+            <div>
+                <h1>Archives ({this.props.params.article})</h1>
+                <h4>date: {date}</h4>
             </div>
         );
     }
